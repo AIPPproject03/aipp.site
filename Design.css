@@ -1,0 +1,193 @@
+body {
+  background-image: url(https://wallpaperaccess.com/full/8351332.gif); /* The image used for background*/
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-family: "Syne", sans-serif;
+}
+
+/*================ TEXT BOX ==================*/
+.text-box {
+position: relative;
+width: 100%;
+}
+
+.open-box {
+position: absolute;
+top: 0;
+right: 0;
+margin-top: 5px;
+margin-right: 10px;
+font-size: 30px;
+cursor: pointer;
+z-index: 1;
+transition: transform 0.8s ease-in-out;
+}
+.text-content {
+width: 100%;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 2.2);
+overflow: hidden;
+transition: height 0.8s ease-in-out;
+height: 0;
+}
+
+.text-box:hover .open-box {
+transform: rotate(90deg);
+}
+.text-box-youtube:hover .open-box {
+transform: rotate(15deg);
+}
+.text-box-youtube:hover .text-content {
+height: 180px;
+}
+.text-box:hover .text-content {
+height: 200px;
+}
+
+/*=========== (MENU) ===========*/
+.text-box-menu {
+position: relative;
+width: 75%;
+}
+.open-box-menu {
+position: absolute;
+top: 0;
+right: 0;
+margin-top: 5px;
+margin-right: 10px;
+font-size: 30px;
+color: lightskyblue;
+cursor: pointer;
+z-index: 1;
+transition: transform 0.8s ease-in-out;
+}
+.text-content-menu {
+width: 100%;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 2.2);
+overflow: hidden;
+transition: height 0.8s ease-in-out;
+height: 0;
+}
+.text-box-menu:hover .open-box-menu {
+transform: rotate(90deg);
+}
+.text-box-menu:hover .text-content-menu {
+height: 300px;
+}
+/*=========== (MENU) ===========*/
+/*================ TEXT BOX ==================*/
+
+.blog-entry {
+font-size: 1.2em;
+}
+/* Efek blink pada text */
+.blink {
+animation: blinker 0.6s linear infinite;
+}
+@keyframes blinker {
+50% {
+opacity: 0;
+}
+}
+/* Efek perindah font seperti lampu RGB gaming */
+.rainbow-text-motto {
+font-size: 35px;
+background-image: linear-gradient(to right bottom, white, lightskyblue, pink, red, yellow, lightskyblue, red);
+background-size: 200%;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: rainbow 3s linear infinite;
+}
+.rainbow-text1 {
+background-image: linear-gradient(to right bottom, white, indigo, pink, red, yellow, indigo, red);
+background-size: 200%;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: rainbow 8s linear infinite;
+}
+ .rainbow-text2 {
+background-image: linear-gradient(to left, white, indigo, pink, green, yellow, orange, red);
+background-size: 200%;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: rainbow 8s linear infinite;
+}
+
+@keyframes rainbow { 
+  0% 
+{
+background-position: 0%;
+ }
+ 100% {
+ background-position: 200%;
+}
+}
+/*==========================================*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  min-width: 50% !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .link {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+.w3-yellow,
+.w3-hover-purple:hover,
+.w3-text-black {
+  color: rgba(255, 204, 217) !important;
+  background-color: rgba(255, 255, 179, 0.3) !important;
+}
+.w3-border{
+  border-radius: 10px;
+  color: black;
+}

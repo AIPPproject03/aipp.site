@@ -1,0 +1,371 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/8351183.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  /* SOME COOL ASSETS */
+  .image-container {
+    text-align: center;
+    width: 100%;
+  }
+  /* RGB LIGHT TEXT */
+
+  .rainbow-text-title {
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgb(46, 3, 10), rgb(179, 115, 160), rgb(255, 231, 14), rgb(134, 0, 0), yellow, rgb(214, 7, 121), rgb(0, 15, 228));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s linear infinite;
+    }
+    
+    @keyframes rainbow { 
+      0% 
+    {
+    background-position: 0%;
+     }
+     100% {
+     background-position: 200%;
+    }
+    }
+
+  /* END OF ASSETS */
+  
+  .container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+  }
+  
+  .container .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: rgb(0, 0, 0);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+/*=======( Icon Page )======== */
+
+  .container .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f50707;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .container .box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .container .box .icon .image1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #ffffff;
+  }
+  
+  .container .box:hover .icon .image1 {
+    font-size: 40px;
+  }
+/*=======( Icon Page )======== */
+  
+  .container .box .content {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  
+  .container .box:hover .content {
+    top: 100px;
+    opacity: 5;
+  }
+  
+  .container .box .content h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  .container .box .content p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+  }
+
+  /* UNTUK TAMPILAN MOBILE */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: calc(100% - 60px);
+      height: auto;
+      margin: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .container .box {
+      width: calc(50% - 20px);
+      height: calc(200px - 30px);
+      margin: 10px;
+    }
+  
+    .container .box .icon:hover {
+      top: 10px;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  
+    .container .box .icon .image1 {
+      font-size: 10px;
+    }
+  
+    .container .box:hover .content {
+      top: 60px;
+      opacity: 1;
+    }
+  
+    .container .box .content {
+      top: 100%;
+      height: calc(100% - 120px);
+      padding: 20px;
+    }
+  
+    .container .box .content h3 {
+      font-size: 15px;
+    }
+    .container .box .content p {
+      font-size: 10px;
+    }
+  }
+    /* UNTUK TAMPILAN MOBILE END */
+
+/*==========( Mengubah Warna Pada Box Icon)==============*/
+    .container .box:nth-child(3) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(3) .icon {
+      background-image: linear-gradient(to left bottom, #bd5b00, #ff0000, #ff8800, #f7b500);
+      background-color: rgb(0, 255, 255);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(3) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(4) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }  
+    .container .box:nth-child(4) .icon {
+      background-image: linear-gradient(to right, #00eeff, #ffa600, #e5ff00, #ad7f00);
+      background-color: rgb(0, 255, 255);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(4) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(5) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(5) .icon {
+      background-image: linear-gradient(to left top, #000000, #fbff00, #070600, #fbff00);
+      background-color: rgb(0, 255, 255);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(5) .icon{
+     background-color: #201f1f00;
+    }
+    .container .box:nth-child(6) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(6) .icon {
+      background-image: linear-gradient(to left bottom, #ff7301, #ffffff, #fffb16, #ffffff);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(6) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(7) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(7) .icon {
+      background-image: linear-gradient(to left bottom, #ffffff, #000000, #ffffff, #000000);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(7) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(8) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(8) .icon {
+      background-image: linear-gradient(to left, #ff00dd, #ff0000, #ffe600, #0026ff);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(8) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(9) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(9) .icon {
+      background-image: linear-gradient(to left top, #3cff00, #007506, #3bfd00, #01751e);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(9) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(10) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(10) .icon {
+      background-image: linear-gradient(to right bottom, #3700ff, #000291, #0818ff, #490028);
+      background-size: 200%;
+      animation: animateGradient 5s linear infinite;
+    }
+    .container .box:hover:nth-child(10) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(11) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(11) .icon {
+      background-image: linear-gradient(to right top, #b90000, #c40089, #3b0034, #e70000);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(11) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(12) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(12) .icon {
+      background-image: linear-gradient(to right, #ffffff, #006305, #7bff00, #000000);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(12) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(13) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(13) .icon {
+      background-image: linear-gradient(to right, #8b4f00, #ff7b00, #8f5304, #855000);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(13) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(14) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(14) .icon {
+      background-image: linear-gradient(to right, #f1a3c4, #ff92a9, #0957ff, #1cacbf);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(14) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(15) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(15) .icon {
+      background-image: linear-gradient(to left bottom, #8400ff, #00ccff, #0041cc, #00e1ff);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(15) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(16) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(16) .icon {
+      background-image: linear-gradient(to right, #c40051, #19008a, #ad5400, #b80000);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(16) .icon{
+      background-color: #201f1f00;
+    }
+    .container .box:nth-child(17) {
+      background-color: rgba(17, 17, 17, 0.5);
+    }
+    .container .box:nth-child(17) .icon {
+      background-image: linear-gradient(to right bottom, #ff0000, #ff00ff, #ff0000, #ff00bf);
+      background-size: 200%;
+      animation: animateGradient 5s ease-in-out infinite;
+    }
+    .container .box:hover:nth-child(17) .icon{
+      background-color: #201f1f00;
+    }
+/* Animasi background-position */
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*==========( Mengubah Warna Pada Box Icon End)==============*/  
+
+/*==========( Menambahkan Efek Jelly )==============*/ 
+.box:hover {
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 0.8);
+  }
+  100% {
+    transform: scale(0.9, 1.1);
+  }
+}
+/*==========( Menambahkan Efek Jelly End)==============*/ 
